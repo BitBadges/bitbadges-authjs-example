@@ -1,5 +1,4 @@
 import { auth, signIn, signOut } from '@/auth';
-import { getChainForAddress } from 'bitbadgesjs-sdk';
 
 const buttonStyle = {
     width: 250,
@@ -70,10 +69,7 @@ export default async function Home() {
             {session?.user ? <SignOut /> : <SignIn />}
 
             {session?.user?.name ? (
-                <div>
-                    User is signed in as {getChainForAddress(session.user.name)}{' '}
-                    address {session.user.name}
-                </div>
+                <div>User is signed in as {session.user.name}</div>
             ) : null}
         </main>
     );

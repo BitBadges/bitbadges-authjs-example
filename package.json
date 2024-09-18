@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "bitbadgesjs-sdk": "^0.4.0",
-    "next": "14.2.4",
+    "next": "14.2.12",
     "next-auth": "^5.0.0-beta.19",
     "react": "^18",
     "react-dom": "^18"

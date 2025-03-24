@@ -10,7 +10,7 @@ const buttonStyle = {
 
 const defaultClassName = 'blockin-button';
 
-export function SignOut() {
+function SignOut() {
     return (
         <form
             action={async () => {
@@ -33,7 +33,7 @@ export function SignOut() {
     );
 }
 
-export function SignIn() {
+function SignIn() {
     return (
         <form
             action={async () => {

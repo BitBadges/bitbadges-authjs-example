@@ -8,17 +8,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
         //Custom parameters
         BitBadges({
-            ownershipRequirements: {
-                assets: [
-                    {
-                        collectionId: 1,
-                        chain: 'BitBadges',
-                        assetIds: [{ start: 9, end: 9 }],
-                        ownershipTimes: [],
-                        mustOwnAmounts: { start: 0, end: 0 },
-                    },
-                ],
-            },
+            // Create your claim in the developer portal and attach it here
+            // claimId: '',
+            // onlyCheckClaimBehindTheScenes: true, // If false, we display on frontend as well
         }),
     ],
 });
